@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naija CyberTrace - Digital Truth for Everyday Nigerians</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a2a6c 0%, #0d324d 50%, #1a2a6c 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .whatsapp-btn {
+            transition: all 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-xl"></i>
+                    <span class="font-bold text-xl">Naija CyberTrace</span>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-blue-200 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-200 transition">Services</a>
+                    <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="hidden gradient-bg text-white py-2 px-4">
+        <div class="flex flex-col space-y-3">
+            <a href="#home" class="hover:text-blue-200 transition">Home</a>
+            <a href="#services" class="hover:text-blue-200 transition">Services</a>
+            <a href="#contact" class="hover:text-blue-200 transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">Naija CyberTrace</h1>
+                <h2 class="text-xl md:text-2xl font-semibold mb-6">Digital Truth for Everyday Nigerians</h2>
+                <p class="text-lg md:text-xl mb-8 leading-relaxed">
+                    We help Nigerians verify online scams, recover hacked accounts, and trace suspicious activity. 
+                    No fluff. No fakes. Just digital truth—powered by open-source intelligence (OSINT) tools and deep web research.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#services" class="bg-white text-blue-900 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition">
+                        Our Services
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-900 transition">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-search-dollar text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Scam Check <span class="text-green-700">(₦1,000)</span></h3>
+                    <p class="text-gray-600 mb-4">
+                        Send us a phone number, email, or website—we'll tell you if it's real or 419.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Quick verification within 24 hours</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Detailed report on findings</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
+                        Request Check
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-lock-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Account Recovery <span class="text-green-700">(₦2,000 – ₦5,000)</span></h3>
+                    <p class="text-gray-600 mb-4">
+                        Lost access to WhatsApp, Instagram, or Gmail? We'll help you get it back.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Works for most social media accounts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Ethical recovery methods only</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
+                        Recover Account
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-blue-900 mb-4">
+                        <i class="fas fa-user-secret text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Background Check <span class="text-green-700">(₦3,000+)</span></h3>
+                    <p class="text-gray-600 mb-4">
+                        Know who you're dealing with before you send money or sign deals.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Comprehensive digital footprint analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Verification of business legitimacy</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
+                        Request Check
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-fingerprint text-4xl text-blue-900 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Trust & Transparency</h3>
+                    <p class="text-gray-600 mb-4">
+                        This service is powered by ethical hackers, digital forensic learners, and open-source research tools.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        We operate with strict ethical guidelines and only use legal methods to gather information.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="mb-6">
+                        Have questions or need our services? Reach out to us through any of these channels.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <a href="mailto:cybertrace.naija@gmail.com" class="hover:underline">cybertrace.naija@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fab fa-whatsapp text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">WhatsApp</h4>
+                                <p>Chat with us directly</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-globe text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold">Social Media</h4>
+                                <div class="flex space-x-4 mt-2">
+                                    <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                                    <a href="#" class="hover:text-blue-200 transition"><i class="fab fa-twitter text-xl"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Contact</h3>
+                    <p class="mb-6">
+                        Send us a message directly via WhatsApp or fill out our contact form.
+                    </p>
+                    
+                    <a href="https://wa.me/?text=Hi%20Naija%20CyberTrace,%20I%20need%20help%20verifying%20something." 
+                       class="whatsapp-btn inline-flex items-center bg-green-600 text-white py-3 px-6 rounded-lg mb-6">
+                        <i class="fab fa-whatsapp text-2xl mr-3"></i>
+                        <span class="font-semibold">Chat on WhatsApp</span>
+                    </a>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h4 class="text-gray-800 font-semibold mb-4">Or submit your request</h4>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm mb-1">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800">
+                            </div>
+                            <div>
+                                <label for="contact" class="block text-gray-700 text-sm mb-1">Contact Info</label>
+                                <input type="text" id="contact" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800" placeholder="Email or Phone">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 text-sm mb-1">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800">
+                                    <option value="">Select a service</option>
+                                    <option value="scam">Scam Check</option>
+                                    <option value="recovery">Account Recovery</option>
+                                    <option value="background">Background Check</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="details" class="block text-gray-700 text-sm mb-1">Details</label>
+                                <textarea id="details" rows="3" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800"></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-900 text-white py-2 px-6 rounded hover:bg-blue-800 transition">
+                                Submit Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-shield-alt text-xl"></i>
+                        <span class="font-bold text-xl">Naija CyberTrace</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-2">Digital Truth for Everyday Nigerians</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#home" class="hover:text-blue-300 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-300 transition">Services</a>
+                    <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; 2023 Naija CyberTrace. All rights reserved.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-blue-300 transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('nav button').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobileMenu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+                      </html>
